@@ -6,45 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="/app/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="forma">
         <div class="container">
-            <form>
-                <div class="name">
-                    <label class="name_user">Имя<br /></label>
-                    <input class="name_input" placeholder="Введите имя" type="text">
-                </div>
-                <div class="surname">
-                    <label class="surname_user">Фамилия<br /></label>
-                    <input class="surname_input" placeholder="Введите фамилию " type="text">
-                </div>
-                <div class="message">
-                    <label class="message_user">Сообщение</label>
-                    <input type="text" class="question_input" placeholder="Введите текст">
-                </div>
-                <div class="question">
-                    <label class="question_user" for="subject-field">Причина вопроса</label>
-                    <select class="question_input" placeholder="Введите текст">
-                        <option value="Consulting">EdTech Consulting</option>
-                        <option value="Web Development">Web Development projects</option>
-                        <option value="Google Scripts">Google Apps Scripts</option>
-                        <option value="G Suite for Education">G Suite for Education Tools</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                <div class="btn">
-                    <button class="btn_submit" type="submit">
-                        <div class="btn_text">Отправить</div>
-                    </button>
-                </div>
-            </form>
+            <div id="test">
+                <form class="form" action="#">
+                    <div class="name">
+                        <label class="name__user">Имя<br /></label>
+                        <input class="name__input" placeholder="Введите имя" type="text">
+                    </div>
+                    <div class="surname">
+                        <label class="surname__user">Фамилия<br /></label>
+                        <input class="surname__input" placeholder="Введите фамилию " type="text">
+                    </div>
+                    <div class="message">
+                        <label class="message__user">Сообщение<br /></label>
+                        <input type="text" class="message__input" placeholder="Введите текст">
+                    </div>
+                    <div class="question">
+                        <label class="question__user" for="subject-field">Причина вопроса</label>
+                        <select class="question__select" placeholder="Введите текст">
+                            <option value="Consulting">Не выбрано</option>
+                        </select>
+                    </div>
+                    <div class="btn">
+                        <button class="btn__submit" type="submit">
+                            <div class="btn__text">Отправить</div>
+                        </button>
+                    </div>
+                </form>
+            </div>
 
         </div>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

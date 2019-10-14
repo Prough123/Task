@@ -1,0 +1,23 @@
+{
+  "name": "my_gulp_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ilia Bozhok",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "stylelint-config-recess-order": "^2.0.3",
+    "stylelint-config-standard": "^19.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "fibers": "^4.0.1",
+    "gulp-stylelint": "^9.0.0",
+    "stylelint": "^11.0.0"
+  }
+}

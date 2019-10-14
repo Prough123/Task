@@ -1,0 +1,150 @@
+$forma-bgc:#EFEFEF;
+$forma-btn: #EE811C;
+$forma-font: 'Roboto',
+sans-serif;
+$forma-btn-color: #FFF;
+
+
+@mixin input {
+    margin-top: 10px;
+    width: 347px;
+    height: 50px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+@mixin forma_block {
+    width: 347px;
+    height: 79px;
+}
+
+@mixin user {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+@mixin message_input {
+    margin-top: 10px;
+    width: 714px;
+    height: 50px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: $forma-font;
+}
+
+*,
+*:after,
+*::before {
+    box-sizing: inherit;
+}
+
+.forma {
+    width: 773px;
+    height: 437px;
+    background: $forma-bgc;
+    border-radius: 5px;
+    margin: 100px auto 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.name {
+    @include forma_block;
+
+    margin: 30px 0 0 30px;
+
+    &__user {
+        @include user;
+    }
+
+    &__input {
+        @include input;
+    }
+}
+
+.surname {
+
+    @include forma_block;
+
+    margin: 30px 29px 0 20px;
+
+    &__user {
+        @include user;
+    }
+
+    &__input {
+        @include input;
+    }
+}
+
+.message {
+    margin: 30px 29px 0 30px;
+    width: 714px;
+    height: 79px;
+
+    &__user {
+        @include user;
+    }
+
+    &__input {
+        @include message_input;
+    }
+}
+
+.question {
+    margin: 30px 29px 0 30px;
+
+    &__user {
+        @include user;
+    }
+
+    &__select {
+        @include message_input;
+    }
+
+    & select {
+        padding-left: 15px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+    }
+}
+
+.btn {
+    margin: 30px auto 0 auto;
+
+    &__submit {
+        width: 130px;
+        height: 50px;
+        background: $forma-btn;
+        border-radius: 5px;
+        border: none;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        color: $forma-btn-color;
+
+    }
+}
+
+input {
+    padding: 0 15px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+}
