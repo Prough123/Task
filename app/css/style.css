@@ -1,88 +1,5 @@
-html {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif; }
-
-*,
-*:after,
-*::before {
-  box-sizing: inherit; }
-
-.forma {
-  width: 773px;
-  height: 437px;
-  background: #EFEFEF;
-  border-radius: 5px;
-  margin: 100px auto 0 auto; }
-
-.form {
-  display: flex;
-  flex-wrap: wrap; }
-
-.name {
-  width: 347px;
-  height: 79px;
-  margin: 30px 0 0 30px; }
-  .name__user {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px; }
-  .name__input {
-    margin-top: 10px;
-    width: 347px;
-    height: 50px;
-    border: 1px solid #E0E0E0;
-    box-sizing: border-box;
-    border-radius: 5px; }
-
-.surname {
-  width: 347px;
-  height: 79px;
-  margin: 30px 29px 0 20px; }
-  .surname__user {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px; }
-  .surname__input {
-    margin-top: 10px;
-    width: 347px;
-    height: 50px;
-    border: 1px solid #E0E0E0;
-    box-sizing: border-box;
-    border-radius: 5px; }
-
-.message {
-  margin: 30px 29px 0 30px;
-  width: 714px;
-  height: 79px; }
-  .message__user {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px; }
-  .message__input {
-    margin-top: 10px;
-    width: 714px;
-    height: 50px;
-    border: 1px solid #E0E0E0;
-    box-sizing: border-box;
-    border-radius: 5px; }
-
-.question {
-  margin: 30px 29px 0 30px; }
-  .question__user {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px; }
-  .question__select {
-    margin-top: 10px;
-    width: 714px;
-    height: 50px;
-    border: 1px solid #E0E0E0;
-    box-sizing: border-box;
-    border-radius: 5px; }
-  .question select {
-    padding-left: 15px;
-    font-style: normal;
-    font-weight: 300;
+html{box-sizing:border-box;font-family:"Roboto",sans-serif}*,*:after,*::before{box-sizing:inherit}.forma{width:773px;height:437px;background:#EFEFEF;border-radius:5px;margin:100px auto 0 auto}.forma .error{background:#FFFFFF;border:1px solid #EE1C1C;box-sizing:border-box;border-radius:5px}.forma label.error{background-color:#EFEFEF;margin-top:7px;border:none;color:#F03838;font-weight:300;font-size:12px}.form{display:flex;flex-wrap:wrap}.name{width:347px;height:79px;margin:30px 0 0 30px}.name__user{font-style:normal;font-weight:300;font-size:16px}.name__input{margin-top:10px;width:347px;height:50px;border:1px solid #E0E0E0;box-sizing:border-box;border-radius:5px}.surname{width:347px;height:79px;margin:30px 29px 0 20px}.surname__user{font-style:normal;font-weight:300;font-size:16px}.surname__input{margin-top:10px;width:347px;height:50px;border:1px solid #E0E0E0;box-sizing:border-box;border-radius:5px}.message{margin:30px 29px 0 30px;width:714px;height:79px}.message__user{font-style:normal;font-weight:300;font-size:16px}.message__input{margin-top:10px;width:714px;height:50px;border:1px solid #E0E0E0;box-sizing:border-box;border-radius:5px}.question{margin:30px 29px 0 30px}.question__user{font-style:normal;font-weight:300;font-size:16px}.question__select{margin-top:10px;width:714px;height:50px;border:1px solid #E0E0E0;box-sizing:border-box;border-radius:5px}.question select{padding-left:15px;font-style:normal;font-weight:300;font-size:16px}.btn{margin:30px auto 0 auto}.btn__submit{width:130px;height:50px;background:#EE811C;border-radius:5px;border:none}.btn__text{font-style:normal;font-weight:bold;font-size:16px;color:#fff}input{padding:0 15px;font-style:normal;font-weight:300;font-size:16px}input:focus::-webkit-input-placeholder{color:transparent}input:focus::-moz-placeholder{color:transparent}input:focus:-moz-placeholder{color:transparent}input:focus:-ms-input-placeholder{color:transparent}
+0;
     font-size: 16px; }
 
 .btn {
@@ -104,3 +21,15 @@ input {
   font-style: normal;
   font-weight: 300;
   font-size: 16px; }
+
+input:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+input:focus::-moz-placeholder {
+  color: transparent; }
+
+input:focus:-moz-placeholder {
+  color: transparent; }
+
+input:focus:-ms-input-placeholder {
+  color: transparent; }

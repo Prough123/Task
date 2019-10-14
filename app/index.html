@@ -16,16 +16,18 @@
             <div id="test">
                 <form class="form" action="#">
                     <div class="name">
-                        <label class="name__user">Имя<br /></label>
-                        <input class="name__input" placeholder="Введите имя" type="text">
+                        <label class="name__user" for="name">Имя<br /></label>
+                        <input class="name__input" name="name" id="name" placeholder="Введите имя" type="text">
                     </div>
                     <div class="surname">
-                        <label class="surname__user">Фамилия<br /></label>
-                        <input class="surname__input" placeholder="Введите фамилию " type="text">
+                        <label class="surname__user" for="surname">Фамилия<br /></label>
+                        <input class="surname__input" name="surname" id="surname" placeholder="Введите фамилию "
+                            type="text">
                     </div>
                     <div class="message">
-                        <label class="message__user">Сообщение<br /></label>
-                        <input type="text" class="message__input" placeholder="Введите текст">
+                        <label class="message__user" for="message">Сообщение<br /></label>
+                        <input type="text" class="message__input" name="message" id="message"
+                            placeholder="Введите текст">
                     </div>
                     <div class="question">
                         <label class="question__user" for="subject-field">Причина вопроса</label>
@@ -40,7 +42,6 @@
                     </div>
                 </form>
             </div>
-
         </div>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
