@@ -4,7 +4,7 @@ const {
     watch
 } = require('gulp');
 const sass = require('gulp-sass');
-const browserSync = require('browser-sync').create();
+const browserSync = require('browser-sync');
 const gulpStylelint = require('gulp-stylelint');
 
 
@@ -18,13 +18,11 @@ function style() {
             }]
         }))
         .pipe(sass({
-            outputStyle: 'compressed'
+            outputStyle: 'compress'
         }).on('error', sass.logError))
         .pipe(dest('./app/css/'))
         .pipe(browserSync.stream());
 }
-
-
 
 function watcher() {
     browserSync.init({

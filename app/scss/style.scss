@@ -1,10 +1,13 @@
+@import 'variables';
+@import 'mixins';
+
 html {
     box-sizing: border-box;
     font-family: $forma-font;
 }
 
 *,
-*:after,
+*::after,
 *::before {
     box-sizing: inherit;
 }
@@ -12,24 +15,24 @@ html {
 .forma {
     width: 773px;
     height: 437px;
+    margin: 100px auto 0 auto;
     background: $forma-bgc;
     border-radius: 5px;
-    margin: 100px auto 0 auto;
 
     .error {
-        background: #FFFFFF;
-        border: 1px solid #EE1C1C;
         box-sizing: border-box;
+        background: #fff;
+        border: 1px solid #ee1c1c;
         border-radius: 5px;
     }
 
     label.error {
-        background-color: #EFEFEF;
         margin-top: 7px;
-        border: none;
-        color: #F03838;
-        font-weight: 300;
         font-size: 12px;
+        font-weight: 300;
+        color: #f03838;
+        background-color: #efefef;
+        border: none;
     }
 }
 
@@ -40,6 +43,7 @@ html {
 
 .name {
     @include forma_block;
+
     margin: 30px 0 0 30px;
 
     &__user {
@@ -66,9 +70,9 @@ html {
 }
 
 .message {
-    margin: 30px 29px 0 30px;
     width: 714px;
     height: 79px;
+    margin: 30px 29px 0 30px;
 
     &__user {
         @include user;
@@ -92,54 +96,47 @@ html {
 
     & select {
         padding-left: 15px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 300;
-        font-size: 16px;
     }
 }
 
 .btn {
     margin: 30px auto 0 auto;
 
-    &__submit {
+    &__text {
         width: 130px;
         height: 50px;
-        background: $forma-btn;
-        border-radius: 5px;
-        border: none;
-    }
-
-    &__text {
+        font-size: 16px;
         font-style: normal;
         font-weight: bold;
-        font-size: 16px;
         color: $forma-btn-color;
-
+        background: $forma-btn;
+        border: none;
+        border-radius: 5px;
     }
 }
 
 input {
     padding: 0 15px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
 }
 
 input:focus::-webkit-input-placeholder {
-    color: transparent
+    color: transparent;
 }
 
 input:focus::-moz-placeholder {
-    color: transparent
+    color: transparent;
 }
 
 input:focus:-moz-placeholder {
-    color: transparent
+    color: transparent;
 }
 
 input:focus:-ms-input-placeholder {
-    color: transparent
+    color: transparent;
 }
-
-@import 'variables';
-@import 'mixins';
