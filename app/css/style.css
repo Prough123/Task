@@ -10,7 +10,7 @@ html {
 }
 
 .forma {
-  width: 773px;
+  max-width: 773px;
   height: 437px;
   margin: 100px auto 0 auto;
   background: #efefef;
@@ -166,4 +166,29 @@ input:focus:-moz-placeholder {
 
 input:focus:-ms-input-placeholder {
   color: transparent;
+}
+
+@media (max-width: 992px) {
+  .forma {
+    width: 422px;
+    height: 100%;
+  }
+  .name {
+    margin: 0 30px;
+  }
+  .name__input {
+    width: 100%;
+  }
+  .surname {
+    margin: 30px 30px 0 30px;
+  }
+  .surname__input {
+    width: 100%;
+  }
+  .message__input {
+    width: 347px;
+  }
+  .question__select {
+    width: 100%;
+  }
 }
