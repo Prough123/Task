@@ -24,7 +24,7 @@ function style() {
         .pipe(browserSync.stream());
 }
 
-/* ПУТЬ К ФАЙЛУ ДОЛЖЕН БЫТЬ CSS/STYLE.CSS ОБЯЗАТЕЛЬНО БЛЯТЬ  */
+
 
 function watcher() {
     browserSync.init({
