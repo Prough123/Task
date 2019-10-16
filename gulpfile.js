@@ -18,7 +18,7 @@ function style() {
             }]
         }))
         .pipe(sass({
-            outputStyle: 'compress'
+            outputStyle: 'expanded'
         }).on('error', sass.logError))
         .pipe(dest('./app/css/'))
         .pipe(browserSync.stream());
