@@ -15,7 +15,7 @@
     "stylelint-config-standard": "^19.0.0"
   },
   "dependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "fibers": "^4.0.1",
     "gulp-stylelint": "^9.0.0",
     "stylelint": "^11.0.0"
